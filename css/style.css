@@ -2,3 +2,33 @@ body{
     margin: 0px;
     background-color: #95a8c6;
 }
+
+#my-div{
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-color: antiquewhite
+}
+div{
+    height: 100px;
+    width: 200px;
+    border: 1px solid blue
+}
+.my-class{
+    /* text-align: center; */
+    color: #fff;
+    float: left;
+    margin: 10px 20px 30px 40px;
+    /* padding-top: 20px */
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-radius: 5%
+}
+#content{
+    width: 100%;
+    border: none;
+    height: auto;
+}
+.my-class span:hover{
+    color: blue
+}

@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    background-image: url('../image/nature-purple-petals-36753.jpg');
+    background-size: cover
+}
+
+.content{
+    margin: auto;
+    margin-top: 20px
+}
+.header{
+    height: 50px;
+    background: blue 
+}
+.left-1, .right-1, .left-2, .right-2{
+    float: left;
+}
+.left-1, .right-1{
+    height: 300px;
+}
+.left-1{
+    width: 30%;
+    background-color: #374a68
+}
+.right-1{
+    width: calc(800px - 30%);
+    background-color: #e2669e
+}
+.left-2, .right-2{
+    height: 200px;
+}
+.left-2{
+    background-color: blanchedalmond;
+    width: 60%;
+}
+.right-2{
+    background-color: rgb(228, 237, 132);
+    width: 40%
+}
+.footer{
+    height: 100px;
+    background-color: #76eda4;
+    clear: both;
+}
