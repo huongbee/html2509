@@ -1,0 +1,74 @@
+body{
+    margin: 0
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #FED700
+}
+.header .content{
+    width: 1100px;
+    margin: auto
+}
+.left{
+    width: 320px;
+    float: left;
+}
+.right{
+    width: 780px;
+    float: left;
+}
+/* .item-menu:last-child{
+    width: 80px;
+} */
+.item-menu{
+    width: 78px;
+    float: left;
+    text-align: center
+}
+
+.logo{
+    background-image: url('../image/icondesktop@1x.png');
+    width: 155px;
+    height: 35px;
+    float: left;
+    background-size: 462px;
+    background-position: 8px 10px;
+}
+.left .form{
+    float: left;
+    width: calc(320px - 155px);
+}
+.left{
+    background-color: black;
+    height: 50px;
+}
+.left .form input{
+    width: 118px;
+    margin: 12px 0;
+    border: none;
+    /* border-radius: 2px; */
+    height: 21px;
+    text-indent: 10px;
+    float: left;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px
+}
+.left .form button{
+    float: left;
+    margin: 12px 0;
+    height: 23px;
+    border: none;
+    background-color: #fff;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px
+}
+.item-menu i{
+    margin-top: 8px
+}
+
+.item-menu p{
+    line-height: 0px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
