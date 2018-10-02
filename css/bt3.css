@@ -47,11 +47,24 @@ body{
     color: red;
 }
 
-@media screen and (max-width:928px){
+@media screen and (min-width:500px) and (max-width:928px){
     .content{
-        width: 900px
+        width: 100%;
+        /* //500px  */
     }
     .sanpham{
-        width: calc(900px / 2 - 20px);
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (max-width:499px){
+    .content{
+        width: 450px
+    }
+    .sanpham{
+        width: 430px;
+    }
+    .thongtin{
+        display: none
     }
 }
