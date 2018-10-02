@@ -46,3 +46,12 @@ body{
 .giasp{
     color: red;
 }
+
+@media screen and (max-width:928px){
+    .content{
+        width: 900px
+    }
+    .sanpham{
+        width: calc(900px / 2 - 20px);
+    }
+}
