@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+
+    </div>
+
+    <button onclick="clickMe()">Click Me</button>
+</body>
+
+<script>
+
+    // 2 lines   a dk b ? yes : no; 
+    // 3 lines  temp
+    var temp = true
+    function clickMe(){
+        var content = document.getElementById('content')
+        temp == true ? content.innerHTML = 'Show' : content.innerHTML = '';
+        temp = !temp
+        
+
+        // if(temp==true) document.getElementById('content').innerHTML = 'Show';
+        // else document.getElementById('content').innerHTML = '';
+        // temp = !temp
+
+
+        // if(temp==true){
+        //     document.getElementById('content').innerHTML = 'Show';
+        //     temp = false
+        // }
+        // else{
+        //     document.getElementById('content').innerHTML = '';
+        //     temp = true
+        // }
+    }
+
+</script>
+</html>
