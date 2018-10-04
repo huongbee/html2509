@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="txtSoa" value="12">
-    <input type="text" id="txtSob" value="1212">
-    <input type="text" id="txtKetqua">
+    <input type="text" id="txtSoa">
+    <input type="text" id="txtSob">
+    <input type="text" id="txtKetqua" readonly>
     <button id="btnClick">Calculate</button>
 
 </body>
@@ -18,20 +18,27 @@
 
    
     document.getElementById('btnClick').onclick = function(){
-        var soA = document.getElementById('txtSoa').value
-        var soB = document.getElementById('txtSob').value
+        var soA = document.getElementById('txtSoa')
+        var soB = document.getElementById('txtSob')
+        var txtKetqua = document.getElementById('txtKetqua')
 
-        if(isNaN(soA)){
+        if(isNaN(soA.value)){
             alert("Vui long nhap so")
-            document.getElementById('txtSoa').focus()
-            document.getElementById('txtSoa').value = ''
+            soA.focus()
+            soA.value = ''
+            return;
+        }
+        if(isNaN(soB.value)){
+            alert("Vui long nhap so")
+            soB.focus()
+            soB.value = ''
             return;
         }
 
-        soA = parseInt(soA)
-        soB = parseInt(soB)
-
-        console.log(calculate(soA, soB))
+        soA = parseInt(soA.value)
+        soB = parseInt(soB.value)
+        txtKetqua.value = calculate(soA, soB)
+        
     }
 </script>
 </html>
