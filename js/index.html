@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content" >
+
+    </div>
+    <div id="content-2">
+        <p>
+            Hello JS 2
+        </p>
+    </div>
+
+    <input type="text"  id="txtName" placeholder="Enter your name" data-id="12" value="Khoa Pham">
+    <button id="btnClick" onclick="clickMe()">Click Me</button>
+    <button id="btnClick2" onclick="clickMe()">Click Me 2</button>
+    
+</body>
+
+    <script src="index1.js"></script>
+    <script>
+        function clickMe(){
+            var place = document.getElementById('txtName').value
+            alert(place)
+        }
+
+        document.getElementById('btnClick').onclick = function(){
+            alert(2345)
+        }
+        document.getElementById('btnClick2').onclick = function(){
+            alert(2345)
+        }
+
+
+        // var place = document.getElementById('txtName').value
+        // alert(place)
+        // console.log(place)
+
+        // document.getElementById('content').innerHTML = '<h2>Hello JS</h2>' //set data
+        
+        // document.getElementById('content').innerText = '<h2>Hello JS</h2>'
+
+
+        // var txtData = document.getElementById('content-2').innerText; // get data
+        // console.log(txtData);
+        
+
+
+
+    </script>
+</html>
