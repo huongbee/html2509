@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtSoa" value="12">
+    <input type="text" id="txtSob" value="1212">
+    <input type="text" id="txtKetqua">
+    <button id="btnClick">Calculate</button>
+
+</body>
+<script src="index1.js"></script>
+<script>
+
+   
+    document.getElementById('btnClick').onclick = function(){
+        var soA = document.getElementById('txtSoa').value
+        var soB = document.getElementById('txtSob').value
+
+        if(isNaN(soA)){
+            alert("Vui long nhap so")
+            document.getElementById('txtSoa').focus()
+            document.getElementById('txtSoa').value = ''
+            return;
+        }
+
+        soA = parseInt(soA)
+        soB = parseInt(soB)
+
+        console.log(calculate(soA, soB))
+    }
+</script>
+</html>
