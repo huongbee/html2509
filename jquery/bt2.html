@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="banco">
+    </div>
+</body>
+<script src="jquery-3.3.1.js"></script>
+<script>
+
+for(var i=1; i<=400; i++){
+    $('.banco').append('<div class="oco"></div>')
+}
+
+$('.banco').css({
+    'width':'440px',
+    'height':"440px",
+    'margin':'auto'
+})
+
+$('.oco').css({
+    'width':'20px',
+    'height':"20px",
+    'float':'left',
+    'border':'1px solid black',
+    'text-align':'center'
+})
+
+$('.oco').mousemove(function(){
+    $(this).css('background-color','#b6d0f9')
+})
+$('.oco').mouseleave(function(){
+    $(this).css('background-color','#fff')
+})
+
+var tmp = true
+$('.oco').click(function(){
+    if($(this).text()==''){
+        tmp ? $(this).text('O') : $(this).text('X')
+        tmp = !tmp
+    }
+    else alert('Can not check again!')
+})
+
+</script>
+</html>
