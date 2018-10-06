@@ -10,7 +10,7 @@
     <div>
         <img src="../image/off.png" id="light">
     </div>
-    <button onclick="turnLight()" id="btnTurn">Turn on</button>
+    <button onclick="turnLight()" id="btnTurn" style="color:blue">Turn on</button>
 </body>
 
 <script>
@@ -27,6 +27,8 @@ function turnLight(){
         btn.innerText = "Turn on"
     }
 }
+
+document.getElementById('btnTurn').style.color = 'blue'
 
 </script>
 </html>

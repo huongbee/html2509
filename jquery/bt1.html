@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="txtSoa">
+    <select class="pheptinh">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+    <input type="text" class="txtSob">
+    =
+    <button>Tính</button>
+    <input type="text" readonly class="txtKetqua">
+</body>
+<script src="jquery-3.3.1.js"></script>
+<script>
+    $('button').click(function(){
+        var txtSoa = parseFloat($('.txtSoa').val()) //get value
+        var txtSob = parseFloat($('.txtSob').val()) //get value
+        var pt = $('.pheptinh').val() //get value
+        var kq
+
+        console.log(typeof txtSoa)
+        console.log(txtSoa)
+        if(isNaN(txtSoa)){
+            alert('Vui long nhap so')
+            $('.txtSoa').focus()
+            $('.txtSoa').val('')
+            return
+        }
+
+        switch(pt){
+            case '+': 
+                kq = txtSoa+txtSob; 
+                break;
+            case '-': 
+                kq = txtSoa-txtSob; 
+                break;
+            case '*': 
+                kq = txtSoa*txtSob; 
+                break;
+            case '/': 
+                if(txtSob==0){
+                    alert('So b khac 0')
+                    
+                    return
+                }
+                kq = txtSoa/txtSob; 
+                break;
+            case '%': 
+                kq = txtSoa%txtSob; 
+                break;
+        }
+        $('.txtKetqua').val(kq)
+    })
+</script>
+</html>
