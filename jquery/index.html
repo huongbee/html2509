@@ -10,6 +10,7 @@
             <h3>Hello Jquery</h3>
         </div>
         <input type="text" class="txtName" value="KPT">
+        <button id="btnClick" >Click me</button>
     </body>
 
     <script src="jquery-3.3.1.js"></script>
@@ -19,8 +20,27 @@
         // var text = $('#content').text()
         // console.log(text)
         
-        var name = $('.txtName').val('Khoa Pham')
-        // console.log(name)
+        var name = $('.txtName').val() //get value
+        console.log(name)
+
+        $('.txtName').val('Khoa Pham') // set value
+
+        $('#btnClick').click(function(){
+            alert('Hello')
+        })
+
+        $('#btnClick').click(()=>{
+            alert('Hello')
+        })
+
+        $('#btnClick').hover(function(){
+            alert('Mouse move')
+        })
+
+
+        document.getElementById('btnClick').onclick = function(){
+
+        }
 
     </script>
 
